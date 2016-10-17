@@ -1,0 +1,1 @@
+UPDATE cert_metadata SET feed_match=True FROM feed_certs WHERE cert_metadata.sha1 = feed_certs.sha1 AND feed_certs.sha1 IS NOT NULL and feed_match = False

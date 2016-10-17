@@ -83,7 +83,7 @@ query += ' description VARCHAR(255), source VARCHAR(64))'
 cursor.execute(query)
 
 for uri in feed_uris:
-    load_file_from_s3(uri, db_conn)
+    load_file_from_s3(uri, db_conn, settings)
     
 # Use query order suggested here: 
 #   https://www.simple.com/engineering/safe-migrations-with-redshift
